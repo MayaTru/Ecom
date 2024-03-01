@@ -15,7 +15,7 @@
       <class name="org.maya.ecomnew.SubmitOrderTest">
         <methods>
           <include name="Test2"/>
-          <include name="Test1" invocation-numbers="1"/>
+          <include name="Test1" invocation-numbers="0 1"/>
           <include name="closeBrowserSession"/>
         </methods>
       </class> <!-- org.maya.ecomnew.SubmitOrderTest -->

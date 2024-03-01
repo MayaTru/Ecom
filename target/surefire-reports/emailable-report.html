@@ -8,12 +8,56 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">27,197</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">SubmitOrder</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">163,085</td><td>Smoke</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">org.maya.cucumber.TestNGTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1708800074208</td><td rowspan="2">8792</td></tr><tr class="passedeven"><td><a href="#m1">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SubmitOrder &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">org.maya.ecomnew.SubmitOrderTest</td><td><a href="#m0">Test1</a></td><td rowspan="2">1709305878615</td><td rowspan="2">54046</td></tr><tr class="failedeven"><td><a href="#m1">Test1</a></td></tr><tr><th colspan="4">SubmitOrder &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">org.maya.ecomnew.SubmitOrderTest</td><td><a href="#m2">Test2</a></td><td rowspan="1">1709306041274</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">org.maya.cucumber.TestNGTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Positive Test for Submitting Order&quot;</td><td>&quot;Check Erro on Landing Page&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">org.maya.cucumber.TestNGTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Positive Test for Submitting Order&quot;</td><td>&quot;Place Products Order&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SubmitOrder</h2><h3 id="m0">org.maya.ecomnew.SubmitOrderTest#Test1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Maya@0812, email=mayatru@mail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .ng-animating (tried for 8 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Mayank\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53261/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e411ae3c6b5c1d1b530d5fc8e3a3d3f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at org.maya.abstractComponents.AbstractComponents.waitForElementtoAppear(AbstractComponents.java:56)
+	at org.maya.ecomnew.ProductCatalog.SelPro(ProductCatalog.java:50)
+	at org.maya.ecomnew.ProductCatalog.lambda$0(ProductCatalog.java:37)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.maya.ecomnew.ProductCatalog.getProductAndSelectByNames(ProductCatalog.java:35)
+	at org.maya.ecomnew.SubmitOrderTest.Test1(SubmitOrderTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.maya.ecomnew.SubmitOrderTest#Test1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Maya@0811, email=mayatru@mail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.card-body (tried for 8 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Mayank\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53322/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae8d1fe58aa43ebb46e2b6e3532b6afc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at org.maya.abstractComponents.AbstractComponents.waitForElementtoAppear(AbstractComponents.java:56)
+	at org.maya.ecomnew.LandingPage.LoginApp(LandingPage.java:38)
+	at org.maya.ecomnew.SubmitOrderTest.Test1(SubmitOrderTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">org.maya.ecomnew.SubmitOrderTest#Test2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method org.maya.ecomnew.SubmitOrderTest.Test2() on instance org.maya.ecomnew.SubmitOrderTest@70ed52de depends on not successfully finished methods 
+[org.maya.ecomnew.SubmitOrderTest.Test1() on instance org.maya.ecomnew.SubmitOrderTest@70ed52de]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

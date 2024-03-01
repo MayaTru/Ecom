@@ -1,63 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-25T00:11:13 IST" name="Surefire suite" finished-at="2024-02-25T00:11:40 IST" duration-ms="27197">
+  <suite started-at="2024-03-01T20:41:18 IST" name="Suite" finished-at="2024-03-01T20:44:01 IST" duration-ms="163085">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.maya.cucumber.TestNGTestRunner@4b5d6a01]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="Smoke">
+        <method signature="SubmitOrderTest.Test2()[pri:0, instance:org.maya.ecomnew.SubmitOrderTest@70ed52de]" name="Test2" class="org.maya.ecomnew.SubmitOrderTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-02-25T00:11:13 IST" name="Surefire test" finished-at="2024-02-25T00:11:40 IST" duration-ms="27197">
-      <class name="org.maya.cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.maya.cucumber.TestNGTestRunner@4b5d6a01]" started-at="2024-02-25T00:11:13 IST" name="setUpClass" finished-at="2024-02-25T00:11:14 IST" duration-ms="976" status="PASS">
+    <test started-at="2024-03-01T20:41:18 IST" name="SubmitOrder" finished-at="2024-03-01T20:44:01 IST" duration-ms="163085">
+      <class name="org.maya.ecomnew.SubmitOrderTest">
+        <test-method signature="Test1(java.util.HashMap)[pri:0, instance:org.maya.ecomnew.SubmitOrderTest@70ed52de]" started-at="2024-03-01T20:41:18 IST" name="Test1" data-provider="getData" finished-at="2024-03-01T20:42:12 IST" duration-ms="54046" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4b4eced1]]>
+                <![CDATA[{password=Maya@0812, email=mayatru@mail.com}]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .ng-animating (tried for 8 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Mayank\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53261/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e411ae3c6b5c1d1b530d5fc8e3a3d3f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .ng-animating (tried for 8 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Mayank\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53261/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e411ae3c6b5c1d1b530d5fc8e3a3d3f
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at org.maya.abstractComponents.AbstractComponents.waitForElementtoAppear(AbstractComponents.java:56)
+at org.maya.ecomnew.ProductCatalog.SelPro(ProductCatalog.java:50)
+at org.maya.ecomnew.ProductCatalog.lambda$0(ProductCatalog.java:37)
+at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+at org.maya.ecomnew.ProductCatalog.getProductAndSelectByNames(ProductCatalog.java:35)
+at org.maya.ecomnew.SubmitOrderTest.Test1(SubmitOrderTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.maya.cucumber.TestNGTestRunner@4b5d6a01]" started-at="2024-02-25T00:11:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-25T00:11:23 IST" duration-ms="8792" status="PASS">
+        </test-method> <!-- Test1 -->
+        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:org.maya.ecomnew.SubmitOrderTest@70ed52de]" started-at="2024-03-01T20:42:30 IST" name="closeBrowserSession" finished-at="2024-03-01T20:42:37 IST" duration-ms="7141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserSession -->
+        <test-method signature="Test1(java.util.HashMap)[pri:0, instance:org.maya.ecomnew.SubmitOrderTest@70ed52de]" started-at="2024-03-01T20:42:37 IST" name="Test1" data-provider="getData" finished-at="2024-03-01T20:43:17 IST" duration-ms="40841" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Positive Test for Submitting Order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Check Erro on Landing Page"]]>
+                <![CDATA[{password=Maya@0811, email=mayatru@mail.com}]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: div.card-body (tried for 8 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Mayank\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53322/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae8d1fe58aa43ebb46e2b6e3532b6afc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.card-body (tried for 8 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Mayank\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53322/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae8d1fe58aa43ebb46e2b6e3532b6afc
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at org.maya.abstractComponents.AbstractComponents.waitForElementtoAppear(AbstractComponents.java:56)
+at org.maya.ecomnew.LandingPage.LoginApp(LandingPage.java:38)
+at org.maya.ecomnew.SubmitOrderTest.Test1(SubmitOrderTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.maya.cucumber.TestNGTestRunner@4b5d6a01]" started-at="2024-02-25T00:11:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-25T00:11:40 IST" duration-ms="17299" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Positive Test for Submitting Order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Place Products Order"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Test1 -->
+        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:org.maya.ecomnew.SubmitOrderTest@70ed52de]" started-at="2024-03-01T20:43:51 IST" name="closeBrowserSession" finished-at="2024-03-01T20:44:01 IST" duration-ms="9410" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.maya.cucumber.TestNGTestRunner@4b5d6a01]" started-at="2024-02-25T00:11:40 IST" name="tearDownClass" finished-at="2024-02-25T00:11:40 IST" duration-ms="70" status="PASS">
+        </test-method> <!-- closeBrowserSession -->
+        <test-method signature="Test2()[pri:0, instance:org.maya.ecomnew.SubmitOrderTest@70ed52de]" started-at="2024-03-01T20:44:01 IST" name="Test2" finished-at="2024-03-01T20:44:01 IST" depends-on-methods="org.maya.ecomnew.SubmitOrderTest.Test1" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method org.maya.ecomnew.SubmitOrderTest.Test2() on instance org.maya.ecomnew.SubmitOrderTest@70ed52de depends on not successfully finished methods 
+[org.maya.ecomnew.SubmitOrderTest.Test1() on instance org.maya.ecomnew.SubmitOrderTest@70ed52de]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method org.maya.ecomnew.SubmitOrderTest.Test2() on instance org.maya.ecomnew.SubmitOrderTest@70ed52de depends on not successfully finished methods 
+[org.maya.ecomnew.SubmitOrderTest.Test1() on instance org.maya.ecomnew.SubmitOrderTest@70ed52de]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- org.maya.cucumber.TestNGTestRunner -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+        </test-method> <!-- Test2 -->
+      </class> <!-- org.maya.ecomnew.SubmitOrderTest -->
+    </test> <!-- SubmitOrder -->
+  </suite> <!-- Suite -->
 </testng-results>

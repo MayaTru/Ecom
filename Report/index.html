@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Maya Test</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 22, 2024 12:45:44 PM</span></a>
+<a href="#"><span class="badge badge-primary">Mar 1, 2024 08:41:17 pm</span></a>
 </li>
 </ul>
 </div>
@@ -80,39 +80,129 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Test1</p>
             <p class="text-sm">
-              <span>12:45:47 PM</span> / <span>00:00:35:215</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:41:18 pm</span> / <span>00:01:11:368</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Test1</h5>
-<span class='badge badge-success'>02.22.2024 12:45:47 PM</span>
-<span class='badge badge-danger'>02.22.2024 12:46:23 PM</span>
-<span class='badge badge-default'>00:00:35:215</span>
+<h5 class="test-status text-fail">Test1</h5>
+<span class='badge badge-success'>03.01.2024 8:41:18 pm</span>
+<span class='badge badge-danger'>03.01.2024 8:42:29 pm</span>
+<span class='badge badge-default'>00:01:11:368</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Mayank\Ecom\reportsTest1\index.html' src="C:\Users\Mayank\Ecom\reportsTest1\index.html">
+    <div class="title">Test1</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:46:23 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:42:12 pm</td>
         <td>
-          Test Passed
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .ng-animating (tried for 8 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Mayank\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53261/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e411ae3c6b5c1d1b530d5fc8e3a3d3f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at org.maya.abstractComponents.AbstractComponents.waitForElementtoAppear(AbstractComponents.java:56)
+	at org.maya.ecomnew.ProductCatalog.SelPro(ProductCatalog.java:50)
+	at org.maya.ecomnew.ProductCatalog.lambda$0(ProductCatalog.java:37)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.maya.ecomnew.ProductCatalog.getProductAndSelectByNames(ProductCatalog.java:35)
+	at org.maya.ecomnew.SubmitOrderTest.Test1(SubmitOrderTest.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:42:12 pm</td>
+        <td>
+          Test Failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:42:12 pm</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .ng-animating (tried for 8 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Mayank\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53261/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e411ae3c6b5c1d1b530d5fc8e3a3d3f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at org.maya.abstractComponents.AbstractComponents.waitForElementtoAppear(AbstractComponents.java:56)
+	at org.maya.ecomnew.ProductCatalog.SelPro(ProductCatalog.java:50)
+	at org.maya.ecomnew.ProductCatalog.lambda$0(ProductCatalog.java:37)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.maya.ecomnew.ProductCatalog.getProductAndSelectByNames(ProductCatalog.java:35)
+	at org.maya.ecomnew.SubmitOrderTest.Test1(SubmitOrderTest.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -127,7 +217,7 @@
           <div class="test-detail">
             <p class="name">Test1</p>
             <p class="text-sm">
-              <span>12:46:28 PM</span> / <span>00:00:16:784</span>
+              <span>8:42:37 pm</span> / <span>00:01:14:711</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -136,16 +226,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Test1</h5>
-<span class='badge badge-success'>02.22.2024 12:46:28 PM</span>
-<span class='badge badge-danger'>02.22.2024 12:46:45 PM</span>
-<span class='badge badge-default'>00:00:16:784</span>
+<span class='badge badge-success'>03.01.2024 8:42:37 pm</span>
+<span class='badge badge-danger'>03.01.2024 8:43:51 pm</span>
+<span class='badge badge-default'>00:01:14:711</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='C:\Users\Mayank\eclipse-workspace-new\ecomnew\reportsTest1\index.html' src="C:\Users\Mayank\eclipse-workspace-new\ecomnew\reportsTest1\index.html">
+<img data-featherlight='C:\Users\Mayank\Ecom\reportsTest1\index.html' src="C:\Users\Mayank\Ecom\reportsTest1\index.html">
     <div class="title">Test1</div>
     </div></div>
 <div class="detail-body mt-4">
@@ -154,23 +244,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:46:43 PM</td>
+        <td>8:43:17 pm</td>
         <td>
           <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.card-body (tried for 8 second(s) with 500 milliseconds interval)
 Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Mayank\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57628}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57628/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bcc3ab0bdd3725d2a9d7f9aa63dd3ec
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Mayank\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53322/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae8d1fe58aa43ebb46e2b6e3532b6afc
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
 	at org.maya.abstractComponents.AbstractComponents.waitForElementtoAppear(AbstractComponents.java:56)
 	at org.maya.ecomnew.LandingPage.LoginApp(LandingPage.java:38)
 	at org.maya.ecomnew.SubmitOrderTest.Test1(SubmitOrderTest.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
@@ -179,46 +267,44 @@ Session ID: 1bcc3ab0bdd3725d2a9d7f9aa63dd3ec
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:819)
 	at org.testng.TestRunner.run(TestRunner.java:619)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </textarea>
           
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:46:43 PM</td>
+        <td>8:43:17 pm</td>
         <td>
           Test Failed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:46:43 PM</td>
+        <td>8:43:17 pm</td>
         <td>
           <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.card-body (tried for 8 second(s) with 500 milliseconds interval)
 Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Mayank\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57628}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57628/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bcc3ab0bdd3725d2a9d7f9aa63dd3ec
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Mayank\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53322/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae8d1fe58aa43ebb46e2b6e3532b6afc
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
 	at org.maya.abstractComponents.AbstractComponents.waitForElementtoAppear(AbstractComponents.java:56)
 	at org.maya.ecomnew.LandingPage.LoginApp(LandingPage.java:38)
 	at org.maya.ecomnew.SubmitOrderTest.Test1(SubmitOrderTest.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
@@ -227,16 +313,16 @@ Session ID: 1bcc3ab0bdd3725d2a9d7f9aa63dd3ec
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:819)
 	at org.testng.TestRunner.run(TestRunner.java:619)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </textarea>
           
         </td>
@@ -253,7 +339,7 @@ Session ID: 1bcc3ab0bdd3725d2a9d7f9aa63dd3ec
           <div class="test-detail">
             <p class="name">Test2</p>
             <p class="text-sm">
-              <span>12:46:51 PM</span> / <span>00:00:00:000</span>
+              <span>8:44:01 pm</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -262,8 +348,8 @@ Session ID: 1bcc3ab0bdd3725d2a9d7f9aa63dd3ec
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Test2</h5>
-<span class='badge badge-success'>02.22.2024 12:46:51 PM</span>
-<span class='badge badge-danger'>02.22.2024 12:46:51 PM</span>
+<span class='badge badge-success'>03.01.2024 8:44:01 pm</span>
+<span class='badge badge-danger'>03.01.2024 8:44:01 pm</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
@@ -292,15 +378,15 @@ Session ID: 1bcc3ab0bdd3725d2a9d7f9aa63dd3ec
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-danger'>2</span>
 </span>
 <p class="name">org.openqa.selenium.TimeoutException</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>org.openqa.selenium.TimeoutException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -313,7 +399,14 @@ Session ID: 1bcc3ab0bdd3725d2a9d7f9aa63dd3ec
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>12:46:28 PM</td>
+<td>20:41:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Test1</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:42:37 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>Test1</a>
 </td>
@@ -335,25 +428,25 @@ Session ID: 1bcc3ab0bdd3725d2a9d7f9aa63dd3ec
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 22, 2024 12:45:44 PM</h3>
+<h3>Mar 1, 2024 08:41:17 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 22, 2024 12:46:51 PM</h3>
+<h3>Mar 1, 2024 08:44:01 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>2</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>1</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -369,12 +462,12 @@ Session ID: 1bcc3ab0bdd3725d2a9d7f9aa63dd3ec
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='66%'>
-<b>2</b> tests passed
+<div><small data-tooltip='33%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='33%'><b>1</b> tests failed,
+<small data-tooltip='66%'><b>2</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -392,9 +485,9 @@ Session ID: 1bcc3ab0bdd3725d2a9d7f9aa63dd3ec
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='25%'><b>1</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='75%'><b>3</b> events failed,
+<small data-tooltip='100%'><b>6</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -411,7 +504,7 @@ Session ID: 1bcc3ab0bdd3725d2a9d7f9aa63dd3ec
 </div></div>
 <script>
 var timeline = {
-"Test1":35.215,"Test1":16.784,"Test2":0
+"Test1":71.368,"Test1":74.711,"Test2":0
 };
 </script>
 <div class="row">
@@ -434,8 +527,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
-failParent: 1,
+passParent: 1,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -451,8 +544,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 1,
-failEvents: 3,
+passEvents: 0,
+failEvents: 6,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0
