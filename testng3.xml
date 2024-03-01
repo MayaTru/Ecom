@@ -4,7 +4,7 @@
 	<listeners>
 		<listener class-name="org.maya.testcomponents.Listeners" />
 	</listeners>
-	<test thread-count="5" name="ErrorValidation">
+	<test thread-count="5" name="ErrorValidation1">
 		<classes>
 			<class name="org.maya.ecomnew.ErrorTest2" />
 		</classes>
